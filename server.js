@@ -62,9 +62,7 @@ app.get("/shoes", (req, res) => {
     return minPriceOk && maxPriceOk && typeOk;
   });
 
-  return res.json(filteredShoes);
+  res.json(filteredShoes);
 });
 
-app.listen(3000, () => {
-  console.log("listening on port 3000");
-});
+app.listen(5001);
